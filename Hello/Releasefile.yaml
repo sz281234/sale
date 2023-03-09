@@ -1,6 +1,6 @@
 # Exported from:        http://SAIs-MacBook-Pro.local:5516/
 # Release version:      22.1.1
-# Date created:         Thu Mar 09 15:09:16 EST 2023
+# Date created:         Thu Mar 09 15:09:48 EST 2023
 
 ---
 apiVersion: xl-release/v1
@@ -8,6 +8,17 @@ kind: Templates
 metadata:
   home: yoo/test/hello
 spec:
+- template: hii
+  scheduledStartDate: 2023-03-09T09:00:00-05:00
+  phases:
+  - phase: "1"
+    tasks:
+    - name: "2"
+      type: xlrelease.ScriptTask
+    color: '#3d6c9e'
+  scriptUsername: admin
+  scriptUserPassword: !value "xlrelease_Release_hii_scriptUserPassword"
+  riskProfile: Default risk profile
 - notifications:
   - notification: TASK_OVERDUE
     priority: High
