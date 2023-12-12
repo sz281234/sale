@@ -11,9 +11,9 @@ spec:
 - template: test
   scheduledStartDate: 2023-12-12T09:00:00+05:30
   phases:
-  - phase: Ph1
+  - phase: Ph2
     tasks:
-    - name: t1
+    - name: t2
       type: xlrelease.ScriptTask
       scheduledStartDate: 2023-12-13T09:00:00+05:30
       dueDate: 2023-12-13T09:30:00+05:30
