@@ -1,26 +1,23 @@
 # Exported from:        http://SAIs-MacBook-Pro-2.local:5516/
 # Release version:      23.3.0
-# Date created:         Wed Dec 13 00:00:54 IST 2023
+# Date created:         Wed Dec 13 00:07:26 IST 2023
 
 ---
 apiVersion: xl-release/v1
 kind: Templates
 metadata:
-  home: test-version-error
+  home: pull-from-git
 spec:
-- template: test
-  scheduledStartDate: 2023-12-12T09:00:00+05:30
+- template: t1
+  scheduledStartDate: 2023-12-13T09:00:00+05:30
   phases:
-  - phase: Ph2
+  - phase: bb1
     tasks:
-    - name: t2
-      type: xlrelease.ScriptTask
-      scheduledStartDate: 2023-12-13T09:00:00+05:30
+    - name: g1
+      type: xlrelease.Task
       dueDate: 2023-12-13T09:30:00+05:30
-      script: print "Hi"
     color: '#3d6c9e'
   scriptUsername: admin
-  scriptUserPassword: !value "xlrelease_Release_test_scriptUserPassword"
   riskProfile: Default risk profile
   author: admin
   defaultTargetFolder: ./
