@@ -1,12 +1,12 @@
-# Exported from:        http://SAIs-MacBook-Pro-2.local:5516/
+# Exported from:        http://SAIs-MacBook-Pro-2.local:5517/
 # Release version:      23.3.0
-# Date created:         Wed Dec 13 22:59:24 IST 2023
+# Date created:         Wed Dec 13 23:09:36 IST 2023
 
 ---
 apiVersion: xl-release/v1
 kind: Templates
 metadata:
-  home: yoo
+  home: yoo2
 spec:
 - template: test-dates
   scheduledStartDate: 2023-12-21T09:00:00+05:30
@@ -16,6 +16,7 @@ spec:
     tasks:
     - name: t1
       type: xlrelease.ScriptTask
+      dueDate: 2023-12-21T09:30:00+05:30
       script: print "Hello"
     color: '#3d6c9e'
   scriptUsername: admin
