@@ -1,6 +1,6 @@
 # Exported from:        http://SAIs-MacBook-Pro-2.local:5517/
 # Release version:      23.3.0
-# Date created:         Wed Dec 13 23:26:36 IST 2023
+# Date created:         Wed Dec 13 23:46:24 IST 2023
 
 ---
 apiVersion: xl-release/v1
@@ -9,7 +9,7 @@ metadata:
   home: yoo2
 spec:
 - template: jumbo
-  scheduledStartDate: 2023-12-08T09:00:00+05:30
+  scheduledStartDate: 2023-12-15T09:00:00+05:30
   plannedDuration: 1800
   phases:
   - phase: New Phase
