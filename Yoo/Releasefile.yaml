@@ -1,6 +1,6 @@
-# Exported from:        http://SAIs-MacBook-Pro-2.local:5517/
+# Exported from:        http://SAIs-MacBook-Pro-2.local:5516/
 # Release version:      23.3.0
-# Date created:         Wed Dec 13 23:46:24 IST 2023
+# Date created:         Thu Dec 14 01:06:09 IST 2023
 
 ---
 apiVersion: xl-release/v1
@@ -13,6 +13,11 @@ spec:
   plannedDuration: 1800
   phases:
   - phase: New Phase
+    tasks:
+    - name: t1
+      type: xlrelease.ScriptTask
+      scheduledStartDate: 2023-12-15T09:10:00+05:30
+      dueDate: 2023-12-15T09:40:00+05:30
   scriptUsername: admin
   riskProfile: Default risk profile
   author: admin
