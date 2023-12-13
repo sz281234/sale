@@ -1,6 +1,6 @@
-# Exported from:        http://SAIs-MacBook-Pro-2.local:5516/
+# Exported from:        http://SAIs-MacBook-Pro-2.local:5517/
 # Release version:      23.3.0
-# Date created:         Wed Dec 13 23:20:10 IST 2023
+# Date created:         Wed Dec 13 23:26:36 IST 2023
 
 ---
 apiVersion: xl-release/v1
@@ -8,13 +8,12 @@ kind: Templates
 metadata:
   home: yoo2
 spec:
-- template: dong
-  scheduledStartDate: 2023-12-12T09:00:00+05:30
+- template: jumbo
+  scheduledStartDate: 2023-12-08T09:00:00+05:30
+  plannedDuration: 1800
   phases:
   - phase: New Phase
-    color: '#3d6c9e'
   scriptUsername: admin
-  scriptUserPassword: !value "xlrelease_Release_dong_scriptUserPassword"
   riskProfile: Default risk profile
   author: admin
   defaultTargetFolder: ./
